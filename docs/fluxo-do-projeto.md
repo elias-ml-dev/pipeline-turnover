@@ -19,13 +19,25 @@ Foram verificadas:
 
 Essa etapa permite conhecer os dados antes de definir as transformações necessárias.
 
-### 2.2. Engenharia de Dados (ETL)
+## 2.2. Engenharia de Dados (ETL)
 
-Será desenvolvido um processo ETL utilizando Python:
+Está sendo desenvolvido um processo ETL utilizando Python e Pandas.
 
-- **Extract:** extração dos dados da base original em CSV.
-- **Transform:** limpeza, validação e padronização dos dados.
-- **Load:** carregamento dos dados tratados em um banco de dados.
+**Extract:** extração dos dados da base original em CSV, realizada por meio de uma função Python.
+
+**Transform:** limpeza, validação e padronização dos dados.
+
+Transformações já implementadas:
+- Conversão das colunas com respostas Sim/Não para valores binários (0 e 1).
+- Aplicação de One-Hot Encoding nas colunas Estado Civil, Frequência de Viagens e Formação.
+- Aplicação de codificação ordinal na coluna E-Sat, preservando a ordem dos níveis de satisfação.
+
+Próximas etapas:
+- Avaliar e transformar as colunas Gênero e Equilíbrio de Vida.
+- Validar a consistência dos dados transformados.
+- Salvar os dados processados.
+
+**Load:** carregamento dos dados tratados em um banco de dados SQL. Esta etapa ainda será implementada.
 
 ### 2.3. Análise de Dados
 
